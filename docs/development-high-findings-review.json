@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-10-28T21:44:46+00:00",
+  "evidence_origin": "User-supplied output of scripts/dev/review-high-findings.sh on host",
+  "source_report": "artifacts-security.2hxBg1xH",
+  "reviews": [
+    {
+      "advisory": "CVE-2008-0888",
+      "package": "unzip",
+      "installed": "6.0-r16",
+      "result": "not_affected_by_CNA_version_range",
+      "official_affected_range": "<6.0"
+    },
+    {
+      "advisory": "CVE-2023-42821",
+      "package": "github.com/gomarkdown/markdown",
+      "installed_version": "0.0.0-20261022144421-6c848fa1b723",
+      "image": "sha256:acb86f3d4a89677b0667c304035147ea39b2adc232606e66257de929531bd9cf",
+      "official_fix_commit": "14b16010c2ee7ff33a940a541d993bd043a88940",
+      "resolved_installed_commit": "6c848fa1b723738de008ec0360fbc38befbe513d",
+      "result": "fix_ancestry_and_source_guard_confirmed"
+    }
+  ],
+  "source_evidence": [
+    {
+      "url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2008/0xxx/CVE-2008-0888.json",
+      "sha256": "8658b434720129786af3467f620db19f2dbae249bbb72239b20aafeadcb91b14"
+    },
+    {
+      "url": "https://api.github.com/repos/gomarkdown/markdown/compare/14b16010c2ee7ff33a940a541d993bd043a88940...6c848fa1b723?per_page=1",
+      "sha256": "e7760169211facf082d1af746711c9ff91a45ab33bf93794221ec5b30122490e"
+    },
+    {
+      "url": "https://api.github.com/repos/gomarkdown/markdown/commits/6c848fa1b723",
+      "sha256": "1cca9e12ee4d2e812ee4ea0da83753079c6ed731b591514fc5015c41b2f3bf33"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gomarkdown/markdown/6c848fa1b723738de008ec0360fbc38befbe513d/parser/citation.go",
+      "sha256": "eec91c6e5e15a8b2053b5f98882f35ca66849439d916b59d0f23a2db61d0f3ec"
+    }
+  ],
+  "limits": "Exact advisory/package/image scopes only. Source-level evidence tied to SPDX, not independent binary reproducibility proof. No scanner suppression or global security acceptance."
+}

@@ -1,0 +1,156 @@
+{
+  "report_source": "artifacts-security.6LzrICuy",
+  "candidate_id": "sha256:0fb4598b1f12b666f3dabe135486849eea2188d987f946be8aee7782db6b5fee",
+  "functional_verification": "Passed according to user output: UI/assets, delivery, persistence, loopback ports, timeouts, graceful worker stop, stopped-worker negative, stopped-FPM unhealthy and recovery.",
+  "findings": [
+    {
+      "id": "CVE-2026-107891",
+      "properties": {
+        "affected_version": "<1.2.6-r6",
+        "cvssV3_severity": "UNSPECIFIED",
+        "fixed_version": "1.2.6-r6",
+        "purls": [
+          "pkg:apk/alpine/musl@1.2.6-r3?os_name=alpine&os_version=3.24"
+        ],
+        "security-severity": "3.1",
+        "tags": [
+          "UNSPECIFIED"
+        ]
+      }
+    },
+    {
+      "id": "GO-2026-5932",
+      "properties": {
+        "affected_version": ">=0",
+        "cvssV3_severity": "UNSPECIFIED",
+        "fixed_version": "not fixed",
+        "purls": [
+          "pkg:golang/golang.org/x/crypto@0.58.0"
+        ],
+        "security-severity": "3.1",
+        "tags": [
+          "UNSPECIFIED"
+        ]
+      }
+    },
+    {
+      "id": "CVE-2023-42821",
+      "properties": {
+        "affected_version": ">=0",
+        "cvssV3": 7.5,
+        "cvssV3_severity": "HIGH",
+        "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "fixed_version": "not fixed",
+        "purls": [
+          "pkg:golang/github.com/gomarkdown/markdown@0.0.0-20261022144421-6c848fa1b723"
+        ],
+        "security-severity": "7.5",
+        "tags": [
+          "HIGH"
+        ]
+      }
+    }
+  ],
+  "x_net_inventory": {
+    "installed": "0.62.0",
+    "previous_version_detected": false,
+    "previous_advisories_detected": false
+  },
+  "limits": "Functional verification passed on ARM64. Three scanner findings remain for exact-image assessment; global security acceptance is pending. Development Mailpit has not been replaced.",
+  "artifact_sha256": {
+    "mailpit.spdx.json": "f784c0303bf67c599ac96aa3081bbfb21d5ec9e3c76226b6eb010a7b632e4c14",
+    "mailpit-cves.sarif.json": "ad66d0c5397b729cef0ec191d882de5c99716d4786a8da58def15311b3352a1d",
+    "mailpit-binary-modules.txt": "f1fb5e8257f322f0dda677fbd4562e21891e8fe9b78e26558e0a08451aefdf33",
+    "mailpit-compiled-packages.txt": "5e8fb282b21b5b82f252bdb5b0cec3f5b386d61b1821ef7e6dd8a6d10f561d1b",
+    "mailpit-source-module.json": "330896df3ca7c2352d523c7dd3f5421bb967b79714bd8fc902987173626cc562"
+  },
+  "previous_candidate_review": {
+    "report_source": "artifacts-security.zL2AQno3",
+    "candidate_id": "sha256:1612ed48a57c21dbc83489911eb22d6c450864a22baf2485036113d2d85f0f52",
+    "functional_verification": "Passed according to user output: UI/assets, delivery, persistence, loopback ports, timeouts, graceful worker stop, stopped-worker negative, stopped-FPM unhealthy and recovery.",
+    "findings": [
+      {
+        "id": "CVE-2026-107891",
+        "properties": {
+          "affected_version": "<1.2.6-r6",
+          "cvssV3_severity": "UNSPECIFIED",
+          "fixed_version": "1.2.6-r6",
+          "purls": [
+            "pkg:apk/alpine/musl@1.2.6-r3?os_name=alpine&os_version=3.24"
+          ],
+          "security-severity": "3.1",
+          "tags": [
+            "UNSPECIFIED"
+          ]
+        }
+      },
+      {
+        "id": "CVE-2026-78661",
+        "properties": {
+          "affected_version": "<0.62.0",
+          "cvssV3_severity": "UNSPECIFIED",
+          "fixed_version": "0.62.0",
+          "purls": [
+            "pkg:golang/golang.org/x/net@0.61.0"
+          ],
+          "security-severity": "3.1",
+          "tags": [
+            "UNSPECIFIED"
+          ]
+        }
+      },
+      {
+        "id": "CVE-2026-97045",
+        "properties": {
+          "affected_version": "<0.62.0",
+          "cvssV3_severity": "UNSPECIFIED",
+          "fixed_version": "0.62.0",
+          "purls": [
+            "pkg:golang/golang.org/x/net@0.61.0"
+          ],
+          "security-severity": "3.1",
+          "tags": [
+            "UNSPECIFIED"
+          ]
+        }
+      },
+      {
+        "id": "GO-2026-5932",
+        "properties": {
+          "affected_version": ">=0",
+          "cvssV3_severity": "UNSPECIFIED",
+          "fixed_version": "not fixed",
+          "purls": [
+            "pkg:golang/golang.org/x/crypto@0.58.0"
+          ],
+          "security-severity": "3.1",
+          "tags": [
+            "UNSPECIFIED"
+          ]
+        }
+      },
+      {
+        "id": "CVE-2023-42821",
+        "properties": {
+          "affected_version": ">=0",
+          "cvssV3": 7.5,
+          "cvssV3_severity": "HIGH",
+          "cvssV3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "fixed_version": "not fixed",
+          "purls": [
+            "pkg:golang/github.com/gomarkdown/markdown@0.0.0-20261022144421-6c848fa1b723"
+          ],
+          "security-severity": "7.5",
+          "tags": [
+            "HIGH"
+          ]
+        }
+      }
+    ],
+    "limits": "SPDX reports both x/net 0.61.0 and 0.62.0 at /mailpit. Cause not conclusively established; packaging contains replaced binary in inherited layer. No finding suppression. Final packaging rebuild/scan pending.",
+    "artifact_sha256": {
+      "mailpit.spdx.json": "be08398bf556eaaf5cbf45426107ee68d0b9af939c0b006297caae79ccf4d33b",
+      "mailpit-cves.sarif.json": "5542aa0510cb383167fe42b750c614823d5d0162da66d5fac40e5d2114cc52c1"
+    }
+  }
+}

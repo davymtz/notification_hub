@@ -1,0 +1,66 @@
+{
+  "review_date": "2026-11-12",
+  "platform": "Docker linux/arm64 on macOS",
+  "application_tests": {
+    "tests": 24,
+    "assertions": 72,
+    "result": "pass"
+  },
+  "functional_acceptance": "pass",
+  "full_acceptance_exit": 1,
+  "security": {
+    "accepted": false,
+    "issues": [
+      "app image scan: Missing report app.spdx.json",
+      "nginx image scan: Missing report nginx.spdx.json",
+      "redis image scan: redis: blocking advisory CVE-2026-4738.",
+      "mailpit image scan: mailpit: blocking advisory CVE-2026-78661.",
+      "mailpit image scan: mailpit: blocking advisory CVE-2026-107891.",
+      "mailpit image scan: mailpit: blocking advisory CVE-2026-4738.",
+      "Scout installation and observed advisory freshness: Scout version/commit/binary differs from reviewed installation.",
+      "PENDING: individual assessment of remaining Go/system and historical libxml2 findings"
+    ],
+    "limits": "A clean scan does not substitute chain tests, provenance, or review of backported packages."
+  },
+  "dependency_updates": {
+    "symfony/http-foundation": {
+      "from": "v7.4.21",
+      "to": "v7.4.23"
+    },
+    "symfony/http-kernel": {
+      "from": "v7.4.15",
+      "to": "v7.4.23"
+    },
+    "symfony/routing": {
+      "from": "v7.4.15",
+      "to": "v7.4.23"
+    }
+  },
+  "composer_audit": {
+    "advisories": 0,
+    "abandoned_packages": 0
+  },
+  "shell_syntax": {
+    "scripts": 18,
+    "failures": 0
+  },
+  "openspec_recorded_tasks": {
+    "complete": 20,
+    "pending": 13,
+    "note": "Historical task ledger preserved; no archive or closure"
+  },
+  "git": {
+    "branch": "main",
+    "commits": 0,
+    "remotes": 0,
+    "push_performed": false
+  },
+  "limits": [
+    "No live Slack provider send; HTTP transport mocked",
+    "Telegram fake",
+    "Mail captured in Mailpit, no external inbox delivery",
+    "No native amd64 execution",
+    "No load or concurrency acceptance"
+  ],
+  "evidence_directory": "artifacts-security.final-review-20261112"
+}

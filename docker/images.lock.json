@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "images": {
+    "php": {
+      "reference": "docker.io/library/php:8.4.27-fpm-alpine@sha256:93aa3f61216b73cc6f878235c9772849449f4efc18dfe3d6678eed645076c00d",
+      "platforms": {
+        "linux/amd64": "sha256:a58708a9676c18f3f3dab3b9b49e39044d7d2b239543122094314dffb0ae05a7",
+        "linux/arm64/v8": "sha256:9a8d22a761b37583ab5c56ebcf37a8e78c64d16e3164c416fe7ff827791e28b6"
+      },
+      "source": "User-supplied docker buildx imagetools inspect output",
+      "verification": "Manifest metadata inspected; image execution and attestations not verified"
+    },
+    "composer": {
+      "reference": "docker.io/library/composer:2@sha256:b6dcd72ca98fa19d0e5b8476de179859704891fad06dd9e0b96833d4c430a5fc",
+      "reportedVersion": "2.10.3",
+      "platforms": {
+        "linux/amd64": "sha256:66c00f4ea1c6a01364d75460bb2837886388e1d5b2b1b6e0f22c8788eb4e73ad",
+        "linux/arm64/v8": "sha256:c08a52ad100f3dabf48feb3a6b17da427061f467dc3b31f8ae5d34335a2e83fb"
+      },
+      "source": "User-supplied docker buildx imagetools inspect output",
+      "verification": "Manifest metadata inspected; binary execution and attestations not verified"
+    },
+    "nginx": {
+      "reference": "docker.io/library/nginx:1.30.6-alpine@sha256:47928bf67eb62a1863cb08d9ecb52d3e704304ba614eaee17884204677702951",
+      "reportedVersion": "1.30.6-alpine",
+      "platforms": {
+        "linux/amd64": "sha256:84ed8c0dd296c188bfc24ed506f46589e9285fb0b11cf3a04d91d524d3067e11",
+        "linux/arm64/v8": "sha256:4f7cab9e1cd018f80e67f31e02dc0c6d18560b19504461c4f3dd37e5c63a74c5"
+      },
+      "source": "User-supplied docker buildx imagetools inspect output",
+      "verification": "Manifest metadata inspected; execution and attestations not verified"
+    },
+    "redis": {
+      "reference": "docker.io/library/redis:8.10.3-alpine@sha256:896f241f438ab6a210cfb24f573b84bea721a4cbe67f1b4fd07eb638b3b02a7b",
+      "reportedVersion": "8.10.3-alpine",
+      "platforms": {
+        "linux/amd64": "sha256:be7c1cada5a6eb1656adfa2635b99296af725881301b21f84f35a71fac072c7f",
+        "linux/arm64/v8": "sha256:b8d831cd7faefb56db98e77ad421379ec35f6b5342a8cff9c8cde2cfd02ec837"
+      },
+      "source": "User-supplied docker buildx imagetools inspect output",
+      "verification": "Manifest metadata inspected; execution and attestations not verified"
+    },
+    "mailpit": {
+      "reference": "docker.io/axllent/mailpit:v1.32.0@sha256:0790692be935ea4420d085694f7985b1f692ca6a8771ab0e0bd8ba75ac180498",
+      "reportedVersion": "v1.32.0",
+      "platforms": {
+        "linux/amd64": "sha256:938ce54b7b946ef3f45a03e119952cf7e67a7969d61f45a3ed055442a77e00f4",
+        "linux/arm64": "sha256:846fbb9d54be56bc6c1ad0f592239452448fac958545578743a9683277f0082f"
+      },
+      "source": "User-supplied docker buildx imagetools inspect output",
+      "verification": "Manifest metadata inspected; execution and attestations not verified"
+    },
+    "golang-builder": {
+      "reference": "docker.io/library/golang:1.26.10-alpine3.24@sha256:a2012b4a1d1f9f7e9f44e0d39b805a901e856b1dd80b4e6ee4338db547050308",
+      "reportedVersion": "1.26.10-alpine3.24",
+      "platforms": {
+        "linux/amd64": "sha256:d1f3216ef30257c850cc136ba42a359ccd9d3e75f19b2c276e520c0b4ef327ce",
+        "linux/arm64/v8": "sha256:3b17138bbc034a2e062a50681b449fc154a1df88ccad6a7bab9bb4861864ee5b"
+      },
+      "source": "User-supplied docker buildx imagetools inspect output",
+      "verification": "Index and architecture metadata recorded; builder execution/attestations pending"
+    }
+  },
+  "localCandidates": {
+    "mailpit": {
+      "imageId": "sha256:1612ed48a57c21dbc83489911eb22d6c450864a22baf2485036113d2d85f0f52",
+      "tag": "notification-hub-mailpit:candidate",
+      "architecture": "linux/arm64",
+      "source": "User-supplied successful build output on 2026-10-29",
+      "verification": "38 frontend tests and Go tests passed; x/net 0.62.0 binary assertion and no OpenPGP package graph passed. Runtime UI/delivery/SBOM/scan pending."
+    }
+  }
+}

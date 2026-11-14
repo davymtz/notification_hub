@@ -1,0 +1,22 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+auth.json
+# Dependencies are installed inside the container
+vendor/
+node_modules/
+# Generated files and runtime data
+storage/logs/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+storage/*.key
+bootstrap/cache/*.php
+database/*.sqlite
+database/*.sqlite-*
+public/hot
+public/storage
+.phpunit.cache/
+.phpunit.result.cache
+.git/

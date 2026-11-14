@@ -1,0 +1,415 @@
+{
+  "report_source": "artifacts-security.2hxBg1xH",
+  "status": "Findings under review; no suppressions applied",
+  "images": [
+    {
+      "service": "app",
+      "image": "ID=sha256:7cea7546d993f42742334b632e2d349285779918cc3c08923fbb68fa8475e839 Architecture=arm64 RepoDigests=[]",
+      "counts": {
+        "UNSPECIFIED": 1,
+        "MEDIUM": 3,
+        "HIGH": 1
+      },
+      "previous_count": 40,
+      "findings": [
+        {
+          "id": "CVE-2026-107891",
+          "severity": "UNSPECIFIED",
+          "packages": [
+            "pkg:apk/alpine/musl@1.2.6-r3?os_name=alpine&os_version=3.24"
+          ],
+          "fixed_version": "1.2.6-r6",
+          "affected_range": "<1.2.6-r6",
+          "assessment": {
+            "status": "fixed_by_distribution_revision",
+            "checked_at": "2026-10-28",
+            "source": "https://secdb.alpinelinux.org/v3.24/main.json",
+            "source_sha256": "30fe355d68d0fe1555df2487eaac58500d65c7aeefcf4d1805910dd99b180849",
+            "installed_revision": "1.2.6-r3",
+            "distribution_fixed_revision": "1.2.6-r3",
+            "scope": "ID=sha256:7cea7546d993f42742334b632e2d349285779918cc3c08923fbb68fa8475e839 Architecture=arm64 RepoDigests=[]",
+            "reason": "Host-supplied Alpine secfix record matches the installed revision. Scout threshold r6 conflicts with distribution data.",
+            "scanner_suppression": false
+          }
+        },
+        {
+          "id": "CVE-2025-45582",
+          "severity": "MEDIUM",
+          "packages": [
+            "pkg:apk/alpine/tar@1.35-r5?os_name=alpine&os_version=3.24"
+          ],
+          "fixed_version": "not fixed",
+          "affected_range": "<=1.35-r5"
+        },
+        {
+          "id": "CVE-2026-18477",
+          "severity": "MEDIUM",
+          "packages": [
+            "pkg:apk/alpine/tar@1.35-r5?os_name=alpine&os_version=3.24"
+          ],
+          "fixed_version": "not fixed",
+          "affected_range": "<=1.35-r5"
+        },
+        {
+          "id": "CVE-2026-18508",
+          "severity": "MEDIUM",
+          "packages": [
+            "pkg:apk/alpine/tar@1.35-r5?os_name=alpine&os_version=3.24"
+          ],
+          "fixed_version": "not fixed",
+          "affected_range": "<=1.35-r5"
+        },
+        {
+          "id": "CVE-2008-0888",
+          "severity": "HIGH",
+          "packages": [
+            "pkg:apk/alpine/unzip@6.0-r16?os_name=alpine&os_version=3.24"
+          ],
+          "fixed_version": "not fixed",
+          "affected_range": "<=6.0-r16",
+          "assessment": {
+            "status": "not_affected_by_official_version_range",
+            "reviewed_at": "2026-10-28",
+            "scope": "Only app unzip 6.0-r16 in image sha256:7cea7546d993f42742334b632e2d349285779918cc3c08923fbb68fa8475e839",
+            "reason": "CNA Red Hat record identifies affected versions <6.0 and defaultStatus unaffected. Installed 6.0-r16 is outside that range. Scout range <=6.0-r16 conflicts.",
+            "source": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2008/0xxx/CVE-2008-0888.json",
+            "revalidate_on": "Image/package/advisory changes; before final acceptance",
+            "automated_query": "Passed on host 2026-10-28T21:44:46+00:00",
+            "scanner_suppression": false,
+            "evidence": "docs/development-high-findings-review.json"
+          }
+        }
+      ],
+      "historical_libxml2_findings_requiring_individual_review": [
+        {
+          "id": "CVE-2026-11979",
+          "severity": "LOW",
+          "packages": [
+            "pkg:apk/alpine/libxml2@2.13.9-r2?os_name=alpine&os_version=3.24"
+          ],
+          "fixed_version": "not fixed",
+          "affected_range": "<=2.13.9-r2"
+        },
+        {
+          "id": "CVE-2025-8732",
+          "severity": "LOW",
+          "packages": [
+            "pkg:apk/alpine/libxml2@2.13.9-r2?os_name=alpine&os_version=3.24"
+          ],
+          "fixed_version": "not fixed",
+          "affected_range": "<=2.13.9-r2"
+        },
+        {
+          "id": "CVE-2026-86137",
+          "severity": "LOW",
+          "packages": [
+            "pkg:apk/alpine/libxml2@2.13.9-r2?os_name=alpine&os_version=3.24"
+          ],
+          "fixed_version": "not fixed",
+          "affected_range": "<=2.13.9-r2"
+        },
+        {
+          "id": "CVE-2026-86141",
+          "severity": "LOW",
+          "packages": [
+            "pkg:apk/alpine/libxml2@2.13.9-r2?os_name=alpine&os_version=3.24"
+          ],
+          "fixed_version": "not fixed",
+          "affected_range": "<=2.13.9-r2"
+        },
+        {
+          "id": "CVE-2026-0989",
+          "severity": "LOW",
+          "packages": [
+            "pkg:apk/alpine/libxml2@2.13.9-r2?os_name=alpine&os_version=3.24"
+          ],
+          "fixed_version": "not fixed",
+          "affected_range": "<=2.13.9-r2"
+        },
+        {
+          "id": "CVE-2026-86144",
+          "severity": "MEDIUM",
+          "packages": [
+            "pkg:apk/alpine/libxml2@2.13.9-r2?os_name=alpine&os_version=3.24"
+          ],
+          "fixed_version": "not fixed",
+          "affected_range": "<=2.13.9-r2"
+        },
+        {
+          "id": "CVE-2026-86138",
+          "severity": "MEDIUM",
+          "packages": [
+            "pkg:apk/alpine/libxml2@2.13.9-r2?os_name=alpine&os_version=3.24"
+          ],
+          "fixed_version": "not fixed",
+          "affected_range": "<=2.13.9-r2"
+        },
+        {
+          "id": "CVE-2026-86139",
+          "severity": "MEDIUM",
+          "packages": [
+            "pkg:apk/alpine/libxml2@2.13.9-r2?os_name=alpine&os_version=3.24"
+          ],
+          "fixed_version": "not fixed",
+          "affected_range": "<=2.13.9-r2"
+        },
+        {
+          "id": "CVE-2026-86142",
+          "severity": "MEDIUM",
+          "packages": [
+            "pkg:apk/alpine/libxml2@2.13.9-r2?os_name=alpine&os_version=3.24"
+          ],
+          "fixed_version": "not fixed",
+          "affected_range": "<=2.13.9-r2"
+        },
+        {
+          "id": "CVE-2026-86143",
+          "severity": "MEDIUM",
+          "packages": [
+            "pkg:apk/alpine/libxml2@2.13.9-r2?os_name=alpine&os_version=3.24"
+          ],
+          "fixed_version": "not fixed",
+          "affected_range": "<=2.13.9-r2"
+        }
+      ],
+      "artifact_sha256": {
+        "app-cves.sarif.json": "7d052b751d9669ac0ae03961a77a4f64e6058b27e758b5354e7182b2890b008c",
+        "app.spdx.json": "9c6160277776129b3a951125ede6b2ef466d4fc45e7bdc87abcfb8206636b434"
+      }
+    },
+    {
+      "service": "nginx",
+      "image": "ID=sha256:f271eec2389adba3e48548bcb816774158dade66a82bf52c5c5b8dab538502b7 Architecture=arm64 RepoDigests=[]",
+      "counts": {
+        "UNSPECIFIED": 1
+      },
+      "previous_count": 36,
+      "findings": [
+        {
+          "id": "CVE-2026-107891",
+          "severity": "UNSPECIFIED",
+          "packages": [
+            "pkg:apk/alpine/musl@1.2.6-r3?os_name=alpine&os_version=3.24"
+          ],
+          "fixed_version": "1.2.6-r6",
+          "affected_range": "<1.2.6-r6",
+          "assessment": {
+            "status": "fixed_by_distribution_revision",
+            "checked_at": "2026-10-28",
+            "source": "https://secdb.alpinelinux.org/v3.24/main.json",
+            "source_sha256": "30fe355d68d0fe1555df2487eaac58500d65c7aeefcf4d1805910dd99b180849",
+            "installed_revision": "1.2.6-r3",
+            "distribution_fixed_revision": "1.2.6-r3",
+            "scope": "ID=sha256:f271eec2389adba3e48548bcb816774158dade66a82bf52c5c5b8dab538502b7 Architecture=arm64 RepoDigests=[]",
+            "reason": "Host-supplied Alpine secfix record matches the installed revision. Scout threshold r6 conflicts with distribution data.",
+            "scanner_suppression": false
+          }
+        }
+      ],
+      "historical_libxml2_findings_requiring_individual_review": [
+        {
+          "id": "CVE-2026-11979",
+          "severity": "LOW",
+          "packages": [
+            "pkg:apk/alpine/libxml2@2.13.9-r2?os_name=alpine&os_version=3.24"
+          ],
+          "fixed_version": "not fixed",
+          "affected_range": "<=2.13.9-r2"
+        },
+        {
+          "id": "CVE-2025-8732",
+          "severity": "LOW",
+          "packages": [
+            "pkg:apk/alpine/libxml2@2.13.9-r2?os_name=alpine&os_version=3.24"
+          ],
+          "fixed_version": "not fixed",
+          "affected_range": "<=2.13.9-r2"
+        },
+        {
+          "id": "CVE-2026-86137",
+          "severity": "LOW",
+          "packages": [
+            "pkg:apk/alpine/libxml2@2.13.9-r2?os_name=alpine&os_version=3.24"
+          ],
+          "fixed_version": "not fixed",
+          "affected_range": "<=2.13.9-r2"
+        },
+        {
+          "id": "CVE-2026-86141",
+          "severity": "LOW",
+          "packages": [
+            "pkg:apk/alpine/libxml2@2.13.9-r2?os_name=alpine&os_version=3.24"
+          ],
+          "fixed_version": "not fixed",
+          "affected_range": "<=2.13.9-r2"
+        },
+        {
+          "id": "CVE-2026-0989",
+          "severity": "LOW",
+          "packages": [
+            "pkg:apk/alpine/libxml2@2.13.9-r2?os_name=alpine&os_version=3.24"
+          ],
+          "fixed_version": "not fixed",
+          "affected_range": "<=2.13.9-r2"
+        },
+        {
+          "id": "CVE-2026-86144",
+          "severity": "MEDIUM",
+          "packages": [
+            "pkg:apk/alpine/libxml2@2.13.9-r2?os_name=alpine&os_version=3.24"
+          ],
+          "fixed_version": "not fixed",
+          "affected_range": "<=2.13.9-r2"
+        },
+        {
+          "id": "CVE-2026-86138",
+          "severity": "MEDIUM",
+          "packages": [
+            "pkg:apk/alpine/libxml2@2.13.9-r2?os_name=alpine&os_version=3.24"
+          ],
+          "fixed_version": "not fixed",
+          "affected_range": "<=2.13.9-r2"
+        },
+        {
+          "id": "CVE-2026-86139",
+          "severity": "MEDIUM",
+          "packages": [
+            "pkg:apk/alpine/libxml2@2.13.9-r2?os_name=alpine&os_version=3.24"
+          ],
+          "fixed_version": "not fixed",
+          "affected_range": "<=2.13.9-r2"
+        },
+        {
+          "id": "CVE-2026-86142",
+          "severity": "MEDIUM",
+          "packages": [
+            "pkg:apk/alpine/libxml2@2.13.9-r2?os_name=alpine&os_version=3.24"
+          ],
+          "fixed_version": "not fixed",
+          "affected_range": "<=2.13.9-r2"
+        },
+        {
+          "id": "CVE-2026-86143",
+          "severity": "MEDIUM",
+          "packages": [
+            "pkg:apk/alpine/libxml2@2.13.9-r2?os_name=alpine&os_version=3.24"
+          ],
+          "fixed_version": "not fixed",
+          "affected_range": "<=2.13.9-r2"
+        }
+      ],
+      "artifact_sha256": {
+        "nginx-cves.sarif.json": "19f7316ec8bc8bef43a3b3db18d568ee1352b7e3b0f276a099407899966ce01b",
+        "nginx.spdx.json": "f9e04dbb1176372d1a56868c8dc1f1c034e6549ec6731bffb2aec76ff7a8c298"
+      }
+    },
+    {
+      "service": "redis",
+      "image": "ID=sha256:3e56fb2dd578827a6a711af0459ce130c8d4ea9ab640f752ffa542ec57e8d89d Architecture=arm64 RepoDigests=[\"redis@sha256:896f241f438ab6a210cfb24f573b84bea721a4cbe67f1b4fd07eb638b3b02a7b\"]",
+      "counts": {
+        "MEDIUM": 1
+      },
+      "previous_count": 1,
+      "findings": [
+        {
+          "id": "CVE-2025-60876",
+          "severity": "MEDIUM",
+          "packages": [
+            "pkg:apk/alpine/busybox@1.37.0-r30?os_name=alpine&os_version=3.23"
+          ],
+          "fixed_version": "not fixed",
+          "affected_range": "<=1.37.0-r30"
+        }
+      ],
+      "historical_libxml2_findings_requiring_individual_review": [],
+      "artifact_sha256": {
+        "redis-cves.sarif.json": "b2e94a211f69c70c6d217b07f4929c5338d3be938c267bd37a0008c2283337f3",
+        "redis.spdx.json": "24c4a469dd43fd5bea2b623c4a56ed0b83737d4919816141ca03dc706f9089f0"
+      }
+    },
+    {
+      "service": "mailpit",
+      "image": "ID=sha256:acb86f3d4a89677b0667c304035147ea39b2adc232606e66257de929531bd9cf Architecture=arm64 RepoDigests=[\"axllent/mailpit@sha256:0790692be935ea4420d085694f7985b1f692ca6a8771ab0e0bd8ba75ac180498\"]",
+      "counts": {
+        "UNSPECIFIED": 4,
+        "HIGH": 1
+      },
+      "previous_count": 5,
+      "findings": [
+        {
+          "id": "CVE-2026-107891",
+          "severity": "UNSPECIFIED",
+          "packages": [
+            "pkg:apk/alpine/musl@1.2.6-r3?os_name=alpine&os_version=3.24"
+          ],
+          "fixed_version": "1.2.6-r6",
+          "affected_range": "<1.2.6-r6",
+          "assessment": {
+            "status": "fixed_by_distribution_revision",
+            "checked_at": "2026-10-28",
+            "source": "https://secdb.alpinelinux.org/v3.24/main.json",
+            "source_sha256": "30fe355d68d0fe1555df2487eaac58500d65c7aeefcf4d1805910dd99b180849",
+            "installed_revision": "1.2.6-r3",
+            "distribution_fixed_revision": "1.2.6-r3",
+            "scope": "ID=sha256:acb86f3d4a89677b0667c304035147ea39b2adc232606e66257de929531bd9cf Architecture=arm64 RepoDigests=[\"axllent/mailpit@sha256:0790692be935ea4420d085694f7985b1f692ca6a8771ab0e0bd8ba75ac180498\"]",
+            "reason": "Host-supplied Alpine secfix record matches the installed revision. Scout threshold r6 conflicts with distribution data.",
+            "scanner_suppression": false
+          }
+        },
+        {
+          "id": "CVE-2026-78661",
+          "severity": "UNSPECIFIED",
+          "packages": [
+            "pkg:golang/golang.org/x/net@0.61.0"
+          ],
+          "fixed_version": "0.62.0",
+          "affected_range": "<0.62.0"
+        },
+        {
+          "id": "CVE-2026-97045",
+          "severity": "UNSPECIFIED",
+          "packages": [
+            "pkg:golang/golang.org/x/net@0.61.0"
+          ],
+          "fixed_version": "0.62.0",
+          "affected_range": "<0.62.0"
+        },
+        {
+          "id": "GO-2026-5932",
+          "severity": "UNSPECIFIED",
+          "packages": [
+            "pkg:golang/golang.org/x/crypto@0.58.0"
+          ],
+          "fixed_version": "not fixed",
+          "affected_range": ">=0"
+        },
+        {
+          "id": "CVE-2023-42821",
+          "severity": "HIGH",
+          "packages": [
+            "pkg:golang/github.com/gomarkdown/markdown@0.0.0-20261022144421-6c848fa1b723"
+          ],
+          "fixed_version": "not fixed",
+          "affected_range": ">=0",
+          "assessment": {
+            "status": "fix_ancestry_and_source_guard_confirmed",
+            "official_fix": "14b16010c2ee7ff33a940a541d993bd043a88940",
+            "source": "https://github.com/gomarkdown/markdown/commit/14b16010c2ee7ff33a940a541d993bd043a88940",
+            "reason": "Host check confirms official fix ancestor and retained citation guard in installed module commit; scoped to scanned Mailpit image. Independent binary reproducibility not established.",
+            "scanner_suppression": false,
+            "resolved_installed_commit": "6c848fa1b723738de008ec0360fbc38befbe513d",
+            "evidence": "docs/development-high-findings-review.json",
+            "checked_at": "2026-10-28T21:44:46+00:00",
+            "revalidate_on": "Image/module/advisory changes; before final acceptance"
+          }
+        }
+      ],
+      "historical_libxml2_findings_requiring_individual_review": [],
+      "artifact_sha256": {
+        "mailpit-cves.sarif.json": "5542aa0510cb383167fe42b750c614823d5d0162da66d5fac40e5d2114cc52c1",
+        "mailpit.spdx.json": "4a57eb8e67732803d4bfbaeb938f6eea4c223cfd0f4b8893637dac58692a335d"
+      }
+    }
+  ],
+  "backport_limit": "Custom libxml2 r2000 falls outside old scanner ranges <=r2. Only CVE-2026-86140 was backported; retain other libxml2 findings from previous review until assessed."
+}

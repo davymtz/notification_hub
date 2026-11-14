@@ -1,0 +1,105 @@
+{
+  "source_report": "artifacts-security.8oTeUKzH",
+  "status": "Partial security evidence; acceptance remains incomplete",
+  "runtime_policy_correction": "Brotli observed as brotli/1.2.1; old parser caused false rejection. Parser corrected; host policy regression rerun pending.",
+  "tls": {
+    "app": {
+      "checked_at": "2026-10-28T22:53:20+00:00",
+      "bundle_sha256": "5961c0a3c65459931c023e0075c09733f09aea4ca439cb85bc4a08bb4f3f568b",
+      "sources": [
+        "https://emudhra.we-have-a-problem.com/",
+        "https://raw.githubusercontent.com/galadran/we-have-a-problem.com/main/impacted-intermediates.json"
+      ],
+      "checks": [
+        {
+          "host": "repo.packagist.org",
+          "expected": "accept",
+          "openssl": "valid_chain_accepted",
+          "curl": "valid_chain_accepted",
+          "php_streams": "valid_chain_accepted",
+          "result": "pass"
+        },
+        {
+          "host": "dv-g3b-emudhra.we-have-a-problem.com",
+          "expected": "reject",
+          "observed_intermediate_der_sha256": "42c4accd12c4f59597925e1a08a7a90102608543809308d50ec427e118ba1493",
+          "openssl": "trust_rejection_confirmed",
+          "curl": "trust_rejection_confirmed",
+          "php_streams": "certificate_rejection_confirmed",
+          "result": "pass"
+        },
+        {
+          "host": "dv-g3b-aaa-emudhra.we-have-a-problem.com",
+          "expected": "reject",
+          "observed_intermediate_der_sha256": "45a883f349aedfd5f3a649b5498ffb121712ba8b448f3f2a91dbc5a766fcddbe",
+          "openssl": "trust_rejection_confirmed",
+          "curl": "trust_rejection_confirmed",
+          "php_streams": "certificate_rejection_confirmed",
+          "result": "pass"
+        }
+      ],
+      "limits": "Two affected TLS paths only. Composer transport still requires its own check; no global incident acceptance. Researcher endpoints may change or be unavailable; that remains inconclusive."
+    },
+    "worker": {
+      "checked_at": "2026-10-28T22:53:25+00:00",
+      "bundle_sha256": "5961c0a3c65459931c023e0075c09733f09aea4ca439cb85bc4a08bb4f3f568b",
+      "sources": [
+        "https://emudhra.we-have-a-problem.com/",
+        "https://raw.githubusercontent.com/galadran/we-have-a-problem.com/main/impacted-intermediates.json"
+      ],
+      "checks": [
+        {
+          "host": "repo.packagist.org",
+          "expected": "accept",
+          "openssl": "valid_chain_accepted",
+          "curl": "valid_chain_accepted",
+          "php_streams": "valid_chain_accepted",
+          "result": "pass"
+        },
+        {
+          "host": "dv-g3b-emudhra.we-have-a-problem.com",
+          "expected": "reject",
+          "observed_intermediate_der_sha256": "42c4accd12c4f59597925e1a08a7a90102608543809308d50ec427e118ba1493",
+          "openssl": "trust_rejection_confirmed",
+          "curl": "trust_rejection_confirmed",
+          "php_streams": "certificate_rejection_confirmed",
+          "result": "pass"
+        },
+        {
+          "host": "dv-g3b-aaa-emudhra.we-have-a-problem.com",
+          "expected": "reject",
+          "observed_intermediate_der_sha256": "45a883f349aedfd5f3a649b5498ffb121712ba8b448f3f2a91dbc5a766fcddbe",
+          "openssl": "trust_rejection_confirmed",
+          "curl": "trust_rejection_confirmed",
+          "php_streams": "certificate_rejection_confirmed",
+          "result": "pass"
+        }
+      ],
+      "limits": "Two affected TLS paths only. Composer transport still requires its own check; no global incident acceptance. Researcher endpoints may change or be unavailable; that remains inconclusive."
+    }
+  },
+  "scout": {
+    "signature_verification": "valid on disk; satisfies designated requirement",
+    "observed_authority": "Developer ID Application: Docker Inc (9BNSXJN65R)",
+    "observed_team_identifier": "9BNSXJN65R",
+    "binary_sha256": "11c19e990ecc3ee9a3159208b407e143d6beb601dea42ff5745e9cf7d1a22bfe",
+    "limits": "Signature verified on host. Publisher/origin and advisory freshness acceptance still under review."
+  },
+  "artifact_sha256": {
+    "app-runtime.json": "af5c19c91760c24d8202599bb84c469bd182bb99c4c2e62cd2acf68ca722ff0e",
+    "worker-runtime.json": "af5c19c91760c24d8202599bb84c469bd182bb99c4c2e62cd2acf68ca722ff0e",
+    "app-tls-chains.json": "92dbd7892c3cb740c8abbe8481baceaea798ba342acd4f04c390284f35ba8fe2",
+    "worker-tls-chains.json": "c11626f42f8762b3af3799fd9ed94695b373d3d1648aa3a5d1506d5370761ec9",
+    "scout-signature-verification.txt": "fee109047916713d99bcb48f35c373297fa2e33dbc130feee7cffa0caa88980b",
+    "scout-signature-identity.txt": "1054012078163a77fd5babde69d268edb7542e1a4d03f72824b832e339980eb8",
+    "scout-binary-sha256.txt": "acc792a57634bb7214429bcf5cadb7fcbbaef29eff2bbed14262bbd943edefa9"
+  },
+  "host_policy_reevaluation": {
+    "result": "All 26 existing policy fixtures, runtime, TLS clients including Composer, audit and image assessments passed according to user output.",
+    "remaining": [
+      "Scout provenance/advisory freshness evaluation (new explicit fixtures prepared)",
+      "Individual remaining advisory assessments/remediation"
+    ],
+    "limits": "Global acceptance remains false. New Scout evaluator not yet executed."
+  }
+}

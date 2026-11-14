@@ -1,0 +1,12 @@
+# Repository tooling and local overrides
+.DS_Store
+.idea/
+.vscode/
+.env
+.env.*
+!.env.example
+/docker-compose.override.yml
+/compose.override.yaml
+
+# Generated local security reports
+/artifacts-security.*/
